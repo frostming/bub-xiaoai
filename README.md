@@ -39,28 +39,11 @@ The channel currently runs in continuous conversation mode by default:
 ### Requirements
 
 - Python `>=3.13`
-- A Xiaomi XiaoAi device supported by the Xiaomi Mina / MiIO APIs
-- A Bub runtime that loads `bub` entry points
 
-### Install dependencies
-
-Using `uv`:
+### Install the plugin to your Bub environment:
 
 ```bash
-uv sync
-```
-
-Or with pip:
-
-```bash
-pip install -e .
-```
-
-The package exposes this Bub entry point:
-
-```toml
-[project.entry-points.bub]
-xiaoai = "bub_xiaoai.plugin:XiaoAiPlugin"
+uv pip install git+https://github.com/frostming/bub-xiaoai.git
 ```
 
 ## Configuration
